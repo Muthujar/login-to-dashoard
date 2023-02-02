@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+// import { Practice } from "./components/practice";
+import { BrowserRouter } from "react-router-dom";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { CookiesProvider } from "react-cookie";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <CookiesProvider>
+        <App />
+      </CookiesProvider>
+      , {/* <Practice /> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 

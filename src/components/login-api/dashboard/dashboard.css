@@ -1,0 +1,18 @@
+.flex-dash {
+  display: flex;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.sidebar-layout {
+  width: 20.5%;
+  background-color: #202b46;
+  height: 100vh;
+  /* position: fixed; */
+}
+.next-side {
+  width: 79.5%;
+  background-color: rgb(255, 0, 221);
+  /* padding-left: 30px !important;
+  padding-right: 30px !important; */
+}
